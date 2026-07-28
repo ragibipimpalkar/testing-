@@ -11,9 +11,14 @@ let package = Package(
         )
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "SwiftTest",
-            path: "SwiftTest"
+            dependencies: [
+                .product(
+                    name: "MarkdownUI",
+                    package: "swift-markdown-ui"
+                )
+            ]
         )
     ]
 )
