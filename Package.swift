@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Test",
+    name: "SwiftTest",
     dependencies: [
         .package(
             url: "https://github.com/gonzalezreal/swift-markdown-ui",
@@ -12,7 +12,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Test"
+            name: "SwiftTest"
         )
     ]
 )
